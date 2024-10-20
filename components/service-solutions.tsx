@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { HashNavigation, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,28 +20,22 @@ type Props = {
 };
 
 export default function ServiceSolutions({ slides, title }: Props) {
-  const [loop, setLoop] = useState(false);
-  useEffect(() => {
-    slides.length <= 6 ? setLoop(false) : setLoop(true);
-  }, [slides.length]);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 400 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: false }}
-      className=" py-14"
+    <div
+      className=" py-14 bg-neutral-100"
     >
       <div className="app-layout ">
         <div className="p-4  ">
           <h3 className=" py-2 pb-5 font-[600]">{title}</h3>
+          <p className="tagline max-w-[1000px]">We offer comprehensive web technologies services, including website development, UI/UX design, e-commerce solutions, and web hosting.</p>
         </div>
       </div>
       <div className="relative py-8   mx-2">
         <Swiper
           id="slider1"
           className="slider6"
-          loop={loop}
+          loop={false}
           preventClicks={false}
           centeredSlides
           preventClicksPropagation={false}
@@ -86,9 +79,8 @@ export default function ServiceSolutions({ slides, title }: Props) {
             },
             1130: {
               slidesPerView: 3.4,
-              spaceBetween: 8,
-              loop: loop,
-            },
+              spaceBetween: 8
+              },
             1800: {
               slidesPerView: 4,
               spaceBetween: 16,
@@ -143,6 +135,6 @@ export default function ServiceSolutions({ slides, title }: Props) {
           </button>
         </Swiper>
       </div>
-    </motion.div>
+    </div>
   );
 }

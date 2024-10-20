@@ -158,14 +158,14 @@ const LandingSection = () => {
         <div>
           <div className="relative w-[300px] h-[250px]  ">
             <Image
-              src={"/l1.png"}
+              src={"/logo.png"}
               width={700}
               height={600}
               className="w-full h-full inset-0 object cover"
               alt="Logo"
             />
           </div>
-          <h1 className="c3 font-[100] text-blue-900">Waa Tech</h1>
+          {/* <h1 className="c3 font-[100] text-blue-900">Waa Tech</h1> */}
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 import { IoLocationSharp } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 
@@ -11,7 +10,7 @@ const Footer = () => {
       <div className="app-layout bg-zinc-200 text-black ">
         {" "}
         <div className="flex gap-10 flex-col  justify-between py-5">
-          <div className="flex items-start justify-between">
+          <div className="flex flex-col min-[1100px]:flex-row items-start justify-between">
             <div className="flex flex-col space-y-3 md:w-[600px]">
               {" "}
               <h2 className=" font-semibold">WAA Tech Ltd.</h2>
@@ -25,7 +24,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="relative  w-[200px] h-[200px] overflow-hidden">
+            <div className="relative w-[200px] h-[200px] overflow-hidden">
               <Image
                 src={"/logo.png"}
                 layout="fill"
@@ -86,8 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex gap-3 text-black justify-center  py-5">
-        <Link href="/privacy">Privacy</Link>|
-        <Link href="/imprint">Imprint</Link>
+        <Link href="/privacy">AGB</Link>|<Link href="/imprint">Imprint</Link>
       </div>
     </div>
   );

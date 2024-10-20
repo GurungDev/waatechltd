@@ -5,7 +5,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 const ImprintPage = () => {
   return (
     <div className="py-20 bg-white">
-      <div className="flex flex-col md:flex-row items-center justify-between w-[60%] m-auto">
+      <div className="flex flex-col md:flex-row items-start justify-between w-[60%] m-auto">
         <div className="grid gap-5 items-center justify-center py-8">
           <div className="relative w-[300px] h-[300px] rounded-md shadow-md overflow-hidden">
             <Image

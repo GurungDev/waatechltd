@@ -5,11 +5,11 @@ import Marquee from "react-fast-marquee";
 
 const TechnologyComponent = () => {
   return (
-    <div className="">
-      <div className="py-10 app-layout">
+    <div className="py-20">
+      <div className="py-20 app-layout">
         {" "}
         <h3 className="font-[600]">Technologies We Use</h3>
-        <p className="py-2">
+        <p className="py-2 tagline max-w-[1000px]">
           We leverage a wide range of cutting-edge technologies to deliver
           high-quality, scalable, and efficient solutions for your business
           needs.
