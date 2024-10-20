@@ -11,7 +11,6 @@ const LandingSection = () => {
       {" "}
       <div className="  flex items-center justify-center min-[1100px]:justify-around flex-col bg-neutral-100 bg-opacity-100 custom-border md:flex-row h-[100vh] ">
         <div className="w-[80%]  min-[1100px]:w-[60%]">
-      
           <Lottie animationData={title} className="" />
           <button className="button duration-300 group hover:bg-transparent relative my-7">
             <Link
@@ -155,8 +154,9 @@ const LandingSection = () => {
             </div>
           </button>
         </div>
-    
-            <div className="relative w-[300px] h-[250px]  ">
+
+        <div>
+          <div className="relative w-[300px] h-[250px]  ">
             <Image
               src={"/l1.png"}
               width={700}
@@ -165,6 +165,8 @@ const LandingSection = () => {
               alt="Logo"
             />
           </div>
+          <h1 className="c3 font-[100] text-blue-900">Waa Tech</h1>
+        </div>
       </div>
     </div>
   );

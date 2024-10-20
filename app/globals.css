@@ -21,7 +21,7 @@
 body {
   scrollbar-width: 0px;
   scrollbar-color: #0b1930 grey;
-  color: white;
+  color: #0b1930;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -31,35 +31,20 @@ html {
 
 .c1 {
   font-family: "Edu AU VIC WA NT Guides", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: inherit;
 }
 
 .c2 {
   font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: inherit;
 }
 
 .c3 {
   font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: inherit;
+
 }
 
 .c4 {
   font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: inherit;
 }
-
-
 
 h1 {
   font-size: 72px;
@@ -111,8 +96,6 @@ h5 {
 }
 
 @media (max-width: 800px) {
-
-
   h1 {
     font-size: 48px;
     line-height: 56px;
@@ -180,7 +163,7 @@ h5 {
 
 .button {
   position: relative;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   background: #181818;
   color: white;
   border: 3px solid #181818;
@@ -258,7 +241,7 @@ h5 {
 .button:hover {
   background: transparent;
   color: #181818;
-  
+
   box-shadow: 0 0 5px #181818;
 }
 .button:hover .star-1 {

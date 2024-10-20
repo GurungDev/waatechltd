@@ -1,3 +1,4 @@
+import Contact_us from "@/components/Contact_us";
 import LandingSection from "@/components/landingSection";
 import ServiceSolutions from "@/components/service-solutions";
 import TechnologyComponent from "@/components/technology";
@@ -69,6 +70,11 @@ export default function Home() {
       <div className="" id="technology"> 
       <TechnologyComponent/>
       </div>
+
+      <div className="" id="contact"> 
+      <Contact_us/>
+      </div>
+       
     </div>
   );
 }
