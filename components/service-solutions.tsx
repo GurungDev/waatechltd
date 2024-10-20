@@ -5,8 +5,8 @@ import Image from "next/image";
 import { HashNavigation, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { useEffect, useState } from "react";
+import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 
 type SwiperSlide = {
   image: string;

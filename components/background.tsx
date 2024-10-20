@@ -1,13 +1,11 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
   type Container,
-  type ISourceOptions,
-  MoveDirection,
-  OutMode,
+  type ISourceOptions
 } from "@tsparticles/engine";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { useEffect, useMemo, useState } from "react";
 
 export const Background = () => {
   const [init, setInit] = useState(false);

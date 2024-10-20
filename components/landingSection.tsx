@@ -1,11 +1,9 @@
 "use client";
-import React from "react";
 import Lottie from "lottie-react";
-import animation from "../animations/profile.json";
-import title from "../animations/title.json";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
+import title from "../animations/title.json";
 
 const LandingSection = () => {
   return (
