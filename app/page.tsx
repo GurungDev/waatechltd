@@ -1,6 +1,7 @@
 import Contact_us from "@/components/Contact_us";
 import LandingSection from "@/components/landingSection";
 import ManagerComponent from "@/components/manager";
+import WebPackagesComponent from "@/components/packages";
 import ServiceSolutions from "@/components/service-solutions";
 import TechnologyComponent from "@/components/technology";
 
@@ -71,6 +72,11 @@ export default function Home() {
       <div className="" id="technology">
         <TechnologyComponent />
       </div>
+
+      <div className="" id="benefits">
+      <WebPackagesComponent/>
+      </div>
+
 
       <ManagerComponent/>
       <div className="" id="contact">

@@ -42,11 +42,11 @@ const ImprintPage = () => {
         </div>
       </div>
       <div className="grid gap-2 justify-center items-center text-black text-center py-10">
-        <div className="relative  w-[300px] h-[300px] overflow-hidden">
+        <div className="relative  w-[400px] h-[300px] ">
           <Image
-            src={"/logo.jpg"}
+            src={"/logo.png"}
             layout="fill"
-            objectFit="cover"
+            objectFit="fit"
             alt="CEO image"
           />
         </div>

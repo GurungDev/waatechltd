@@ -24,11 +24,11 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="relative w-[200px] h-[200px] overflow-hidden">
+            <div className="relative w-[200px] h-[200px]">
               <Image
                 src={"/logo.png"}
                 layout="fill"
-                objectFit="cover"
+                objectFit="fit"
                 alt="Logo"
               />
             </div>
