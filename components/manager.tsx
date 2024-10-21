@@ -20,12 +20,12 @@ const ManagerComponent = () => {
           <p className="tagline">Hannah Maria Zeller</p>
           <p>
             Hannah Maria Zeller, as the Marketing Manager, exemplifies
-            creativity and strategic prowess, driving the company’s brand
+            creativity and strategic prowess, driving the company&apos;s brand
             forward with innovative campaigns. With a deep commitment to
             excellence, she ensures the marketing strategies align with the
-            company’s vision and values. Hannah's dedication to building strong
+            company&apos;s vision and values. Hannah&apos;s dedication to building strong
             customer relationships and her ability to lead and inspire her team
-            are pivotal to the company’s ongoing success.
+            are pivotal to the company&apos;s ongoing success.
           </p>
         </div>
       </div>
