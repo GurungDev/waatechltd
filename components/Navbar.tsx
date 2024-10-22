@@ -54,11 +54,11 @@ const NavbarComponent = () => {
           }`}
         >
           {[
-            { href: "#home", label: "Home", color: "red-400" },
-            { href: "#services", label: "Services", color: "green-400" },
-            { href: "#technology", label: "Technologies", color: "pink-400" },
-            { href: "#benefits", label: "Packages", color: "purple-400" },
-            { href: "#contact", label: "Contact Us", color: "yellow-400" },
+            { href: "/", label: "Home", color: "decoration-red-400" },
+            { href: "services", label: "Services", color: "decoration-green-400" },
+            // { href: "#technology", label: "Technologies", color: "decoration-pink-400" },
+            { href: "aboutus", label: "About us", color: "decoration-purple-400" },
+            { href: "#contact", label: "Contact Us", color: "decoration-yellow-400" },
           ].map((link) => (
             <Link
               href={link.href}
@@ -71,7 +71,7 @@ const NavbarComponent = () => {
               onClick={() => setActiveLink(link.href)}
             >
               <p
-                className={`  hover:underline  underline-offset-4	 ${
+                className={`  hover:underline ${link.color} underline-offset-4	 ${
                   activeLink === link.href ? `underline` : ""
                 }`}
               >

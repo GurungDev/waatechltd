@@ -9,6 +9,7 @@ import "swiper/css/effect-creative";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import Footer from "@/components/Footer";
+import ContactHoverButton from "@/components/contactHover";
 export const metadata: Metadata = {
   title: "Waa Tech Ltd.",
   description: "Waa Tech Ltd. - Leading provider of web technologies, SEO, and digital marketing services.",
@@ -43,6 +44,7 @@ export default function RootLayout({
       </head>
       <body>
         <NavbarComponent/>
+        <ContactHoverButton/>
         <Background />
         {children}
         <Footer/>
