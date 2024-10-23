@@ -314,7 +314,7 @@ export const Background = () => {
           },
           "limit": {
             "mode": "delete",
-            "value": 0
+            "value": 100
           },
           "value": 80
         },

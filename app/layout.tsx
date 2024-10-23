@@ -42,7 +42,7 @@ export default function RootLayout({
 
         <title>Waa Tech Ltd.</title>
       </head>
-      <body>
+      <body>l
         <NavbarComponent/>
         <ContactHoverButton/>
         <Background />

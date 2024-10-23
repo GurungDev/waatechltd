@@ -6,10 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { useEffect, useState } from "react";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
+import Link from "next/link";
 
 type SwiperSlide = {
   image: string;
   title: string;
+  href: string;
   description: string;
   bg: string;
 };
@@ -90,7 +92,7 @@ export default function ServiceSolutions({ slides, title }: Props) {
         >
           {slides.map((data, i) => (
             <SwiperSlide key={i} className="z-[49]">
-              <div className="!flex !flex-col group !items-center !justify-center max-w-[400px] bg-red-200 relative min-h-[550px] rounded-md overflow-hidden ">
+              <Link href={data?.href}  className="!flex !flex-col group !items-center !justify-center max-w-[400px] bg-red-200 relative min-h-[550px] rounded-md overflow-hidden ">
                 <Image
                   src={data.image}
                   alt="Server"
@@ -112,7 +114,7 @@ export default function ServiceSolutions({ slides, title }: Props) {
                     {data.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
           <button
