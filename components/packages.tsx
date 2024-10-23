@@ -109,12 +109,12 @@ const WebPackagesComponent = () => {
         </div>
 
         <div className="flex w-full flex-col min-[1100px]:flex-row px-6 justify-center space-x-2">
-          <div className="w-[40%] ">
+          <div className=" min-[1100px]:w-[40%] ">
             <div className="sticky top-40">
               <Lottie animationData={profile} className="w-[60%] " />
             </div>
           </div>
-          <div className="w-[50%]">
+          <div className=" min-[1100px]:w-[50%]">
             {slides?.map((slide, index) => {
               return (
                 <div key={index}>

@@ -9,6 +9,7 @@ const MessageBanner = ({
   title: string;
   link: string;
   btn: string;
+  
 }) => {
   return (
     <div className="">
