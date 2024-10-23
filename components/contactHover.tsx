@@ -6,7 +6,7 @@ const ContactHoverButton = () => {
   return (
     <div>
       {" "}
-      <FloatingWhatsApp phoneNumber="+49 1523 1401084" accountName="Waa Tech" />
+      <FloatingWhatsApp phoneNumber="+49 1523 1401084" avatar="/boksiii.jpeg" accountName="Waa Tech" />
     </div>
   );
 };

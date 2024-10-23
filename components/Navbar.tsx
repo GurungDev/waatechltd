@@ -85,7 +85,12 @@ const NavbarComponent = () => {
               color: "decoration-purple-400",
             },
             {
-              href: "#contact",
+              href: "/testimonials",
+              label: "Testimonials",
+              color: "decoration-blue-400",
+            },
+            {
+              href: "/contactus",
               label: "Contact Us",
               color: "decoration-yellow-400",
             },

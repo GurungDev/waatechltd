@@ -1,9 +1,12 @@
+import AboutUsSection from "@/components/aboutusSection";
 import Contact_us from "@/components/Contact_us";
 import LandingSection from "@/components/landingSection";
 import ManagerComponent from "@/components/manager";
+import MessageBanner from "@/components/messageBanner";
 import WebPackagesComponent from "@/components/packages";
 import ServiceSolutions from "@/components/service-solutions";
 import TechnologyComponent from "@/components/technology";
+import TestimonialSection from "@/components/testimonialSection";
 
 export default function Home() {
   return (
@@ -11,6 +14,7 @@ export default function Home() {
       <div id="home">
         <LandingSection />
       </div>
+
 
       <div className="w-full h-full" id="services">
         <ServiceSolutions
@@ -20,14 +24,14 @@ export default function Home() {
               image: "/web.jpg",
               title: "Custom Web Development",
               bg: "bg-blue-400",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
               description:
                 "Create bespoke web solutions tailored to your business needs, from simple websites to complex web applications.",
             },
             {
               image: "/soft.jpg",
               title: "Custom Software Development",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
 
               bg: "bg-blue-400",
               description:
@@ -36,7 +40,7 @@ export default function Home() {
             {
               image: "/ui.jpg",
               title: "UX/UI Design",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
 
               bg: "bg-green-400",
               description:
@@ -46,14 +50,14 @@ export default function Home() {
               image: "/seo.jpg",
               title: "SEO Optimization",
               bg: "bg-orange-400",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
 
               description:
                 "Improve your website’s visibility on search engines with comprehensive SEO strategies that drive organic traffic and increase rankings.",
             },
             {
               image: "/ecommerce.jpg",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
 
               title: "E-commerce Solutions",
               bg: "bg-purple-400",
@@ -63,7 +67,7 @@ export default function Home() {
             {
               image: "/maintain.jpg",
               title: "Web Maintenance",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
 
               bg: "bg-red-400",
               description:
@@ -73,7 +77,7 @@ export default function Home() {
               image: "/analytics.jpg",
               title: "Web Analytics",
               bg: "bg-teal-400",
-              href:"/services/custom-web-development",
+              href: "/services/custom-web-development",
 
               description:
                 "Leverage data insights to track user behavior, measure website performance, and make data-driven decisions for continuous improvement.",
@@ -86,15 +90,14 @@ export default function Home() {
         <TechnologyComponent />
       </div>
 
+      <AboutUsSection />
       <div className="" id="benefits">
-      <WebPackagesComponent/>
+        <WebPackagesComponent />
       </div>
+      <TestimonialSection/>
 
-
-      <ManagerComponent/>
-      <div className="" id="contact">
-        <Contact_us />
-      </div>
+      <ManagerComponent />
+      <MessageBanner title="Let us help you realize the vision of your future digital project" btn="Contact Us" link="/contactus"/>
     </div>
   );
 }

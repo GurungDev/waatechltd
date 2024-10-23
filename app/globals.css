@@ -30,8 +30,7 @@ html {
 }
 
 .c1 {
-  font-family: "Edu AU VIC WA NT Guides", cursive;
-}
+  font-family: "Chakra Petch", sans-serif;}
 
 .c2 {
   font-family: "Permanent Marker", cursive;
@@ -316,4 +315,9 @@ h5 {
 .link-underline:hover {
   background-size: 100% 3px;
   background-position: 0 100%
+}
+
+
+.messagebox{
+  border-radius: 74% 26% 28% 72% / 69% 49% 51% 31% ;
 }
