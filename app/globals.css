@@ -30,8 +30,7 @@ html {
 }
 
 .c1 {
-  font-family: "Edu AU VIC WA NT Guides", cursive;
-}
+  font-family: "Chakra Petch", sans-serif;}
 
 .c2 {
   font-family: "Permanent Marker", cursive;
@@ -297,4 +296,28 @@ h5 {
   height: auto;
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
+}
+
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#293cba, #0542bb);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#F2C, #F2C)
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+
+
+.messagebox{
+  border-radius: 74% 26% 28% 72% / 69% 49% 51% 31% ;
 }

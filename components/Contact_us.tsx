@@ -39,14 +39,14 @@ const Contact_us: React.FC = () => {
   };
 
   return (
-    <div className="md:h-screen md:w-full ">
-      <div className="md:flex md:flex-row flex flex-col space-y-3 md:h-full md:w-full md:py-9 md:px-20 p-4 py-10 overflow-hidden">
+    <div className="min-[1100px]:w-full app-layout">
+      <div className="md:flex min-[1100px]:flex-row flex flex-col space-y-3 min-[1100px]:h-full min-[1100px]:w-full min-[1100px]:py-9 min-[1100px]:px-20 p-4 py-10 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -400 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="flex flex-col md:w-1/2 md:p-14 md:space-y-6"
+          className="flex flex-col min-[1100px]:w-1/2 min-[1100px]:p-14 min-[1100px]:space-y-6"
         >
           <h3>Let’s Start a Conversation</h3>
           <div className="text-black space-y-3">
@@ -77,9 +77,9 @@ const Contact_us: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="flex-1 flex flex-col space-y-3 md:p-20"
+          className="flex-1 flex flex-col space-y-3 min-[1100px]:p-20"
         >
-          <form onSubmit={handleSubmit} className="md:w-[500px] flex flex-col space-y-4">
+          <form onSubmit={handleSubmit} className="min-[1100px]:w-[500px] flex flex-col space-y-4">
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
                 First Name

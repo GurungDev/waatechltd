@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import Lottie from "lottie-react";
 import React from "react";
 import { BiSolidPackage } from "react-icons/bi";
-import title from "../animations/title.json";
+import profile from "../animations/profile.json";
 
 const WebPackagesComponent = () => {
   const slides = [
@@ -97,53 +97,57 @@ const WebPackagesComponent = () => {
   ];
 
   return (
-    <div className="py-20">
-      <div className="py-20 app-layout">
-        {" "}
-        <h3 className="font-[600]">Our Web Packages</h3>
-        <p className="py-2 tagline max-w-[1000px]">
-          We offer a variety of web packages tailored to meet different needs
-          and budgets.
-        </p>
-      </div>
+    <div className="py-20 w-full ">
+      <div className="relative ">
+        <div className="py-20 app-layout ">
+          {" "}
+          <h3 className="font-[600]">Our Web Packages</h3>
+          <p className="py-2 tagline max-w-[1000px]">
+            We offer a variety of web packages tailored to meet different needs
+            and budgets.
+          </p>
+        </div>
 
-      <div>
-        {slides?.map((slide, index) => {
-          return (
-            <div
-              key={index}
-              className="flex w-full flex-col min-[1100px]:flex-row px-6 justify-center items-center space-x-2"
-            >
-              <div className="flex order-2 min-[1100px]:order-1 w-[60%] flex-col space-y-6 text-left p-8">
-                
-                <div className="">
-                <h3 className="c4 font-[700] "> {slide?.label} Package</h3>
-                  {slide.subpoints.map((subpoint, subIndex) => (
-                    <div className="" key={subIndex}>
-                      {subIndex == 0 || subIndex == 2 ? (
-                        <h4
-                          className={`${
-                            subIndex == 0 || subIndex == 2
-                              ? ` font-semibold ${slide.text_color}`
-                              : `   mb-3`
-                          } text-black`}
-                        >
-                          {subpoint}
-                        </h4>
-                      ) : (
-                        <p className="text-black">{subpoint}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="px-2 order-1 min-[1100px]:order-2 py-4 md:w-[60%] min-[1100px]:w-[30%]">
-                {/* <Lottie animationData={title} /> */}
-               <h1 className="c2"> {slide?.label}</h1>
-              </div>
+        <div className="flex w-full flex-col min-[1100px]:flex-row px-6 justify-center space-x-2">
+          <div className=" min-[1100px]:w-[40%] ">
+            <div className="sticky top-40">
+              <Lottie animationData={profile} className="w-[60%] " />
             </div>
-          );
-        })}
+          </div>
+          <div className=" min-[1100px]:w-[50%]">
+            {slides?.map((slide, index) => {
+              return (
+                <div key={index}>
+                  <div className="min-[1100px]:order-1 flex-col text-left py-20 ">
+                    <div className="">
+                      <h3 className={`c2 my-5 font-[700] ${slide?.text_color}`}>
+                        {" "}
+                        {slide?.label} Package
+                      </h3>
+                      {slide.subpoints.map((subpoint, subIndex) => (
+                        <div className="" key={subIndex}>
+                          {subIndex == 0 || subIndex == 2 ? (
+                            <h4
+                              className={`${
+                                subIndex == 0 || subIndex == 2
+                                  ? ` font-semibold ${slide.text_color}`
+                                  : `   mb-3`
+                              } text-black`}
+                            >
+                              {subpoint}
+                            </h4>
+                          ) : (
+                            <p className="text-black">{subpoint}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}{" "}
+          </div>
+        </div>
       </div>
     </div>
   );

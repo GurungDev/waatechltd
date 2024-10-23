@@ -1,23 +1,21 @@
-import AboutUsSection from "@/components/aboutusSection";
-import Contact_us from "@/components/Contact_us";
-import LandingSection from "@/components/landingSection";
 import ManagerComponent from "@/components/manager";
 import MessageBanner from "@/components/messageBanner";
-import WebPackagesComponent from "@/components/packages";
 import ServiceSolutions from "@/components/service-solutions";
-import TechnologyComponent from "@/components/technology";
-import TestimonialSection from "@/components/testimonialSection";
+import TestimonialCard from "@/components/testimonials page/page";
+import React from "react";
 
-export default function Home() {
+const TestimonailPage = () => {
   return (
-    <div>
-      <div id="home">
-        <LandingSection />
+    <div className="min-h-[100vh] pt-32">
+      <p className="text-center">Tens of Five Star Ratings. Every Day.</p>
+      <h1 className="text-center font-[800] py-14 ">
+        The Reason Behind People&apos;s Choice...
+      </h1>
+      <div className="app-layout py-20">
+        <TestimonialCard />
       </div>
-
-
-      <div className="w-full h-full" id="services">
-        <ServiceSolutions
+     
+      <ServiceSolutions
           title={"Our Web Technologies Services"}
           slides={[
             {
@@ -84,20 +82,15 @@ export default function Home() {
             },
           ]}
         />
-      </div>
 
-      <div className="" id="technology">
-        <TechnologyComponent />
-      </div>
-
-      <AboutUsSection />
-      <div className="" id="benefits">
-        <WebPackagesComponent />
-      </div>
-      <TestimonialSection/>
-
-      <ManagerComponent />
-      <MessageBanner title="Let us help you realize the vision of your future digital project" btn="Contact Us" link="/contactus"/>
+<ManagerComponent />
+      <MessageBanner
+        title="Transform your ideas into successful digital projects with us."
+        btn="Let's Connect"
+        link="/contactus"
+      />
     </div>
   );
-}
+};
+
+export default TestimonailPage;
