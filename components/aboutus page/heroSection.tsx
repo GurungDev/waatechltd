@@ -28,12 +28,9 @@ const AboutUsLandingPage = () => {
                 professional website creation!{" "}
               </span>
             </p>
-            <button className="my-8">
-              <Link
-                href={"/contactus"}
-                className="px-14 tagline py-3 bg-black text-white my-8 rounded-xl font-[600] hover:px-20 duration-300"
-              >
-                Let&apos;s work Together
+            <button className="my-8 px-14 tagline py-3 bg-black text-white my-8 rounded-xl font-[600] hover:px-20 duration-300">
+              <Link href={"/contactus"} className="">
+                Let&apos;s work Together 
               </Link>
             </button>{" "}
           </motion.div>
