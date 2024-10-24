@@ -1,6 +1,7 @@
+"use client"
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "framer-motion";
 const ManagerComponent = () => {
   return (
     <div className="py-40 bg-neutral-100">
@@ -15,7 +16,21 @@ const ManagerComponent = () => {
             className="w-[300px] rounded-xl"
           />
         </div>
-        <div className="w-[70%] m-auto">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: 70,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}
+          className="w-[70%] m-auto"
+        >
           <h3>Marketing Manager</h3>
           <p className="tagline">Hannah Maria Zeller</p>
           <p>
@@ -23,11 +38,11 @@ const ManagerComponent = () => {
             creativity and strategic prowess, driving the company&apos;s brand
             forward with innovative campaigns. With a deep commitment to
             excellence, she ensures the marketing strategies align with the
-            company&apos;s vision and values. Hannah&apos;s dedication to building strong
-            customer relationships and her ability to lead and inspire her team
-            are pivotal to the company&apos;s ongoing success.
+            company&apos;s vision and values. Hannah&apos;s dedication to
+            building strong customer relationships and her ability to lead and
+            inspire her team are pivotal to the company&apos;s ongoing success.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

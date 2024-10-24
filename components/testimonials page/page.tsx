@@ -1,4 +1,5 @@
-import { div } from "framer-motion/client";
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
@@ -60,7 +61,17 @@ const TestimonialCard = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 min-[1100px]:grid-cols-3 xl:grid-cols-4 gap-6">
       {testimonialList?.map((data, key) => {
         return (
-          <div key={key} className="border-2 bg-neutral-100 p-10 rounded-md ">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.3,
+              delay: key / 8,
+            }}
+            key={key}
+            viewport={{once:true}}
+            className="border-2 bg-neutral-100 p-10 rounded-md "
+          >
             <div className="flex gap-1">
               <FaStar size={20} className="text-yellow-500" />
               <FaStar size={20} className="text-yellow-500" />
@@ -70,7 +81,7 @@ const TestimonialCard = () => {
             </div>
             <p className="py-7">{data?.testimonial}</p>
             <p className="caption font-[800]">{data?.name}</p>
-          </div>
+          </motion.div>
         );
       })}
     </div>

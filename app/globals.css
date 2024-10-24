@@ -21,7 +21,7 @@
 body {
   scrollbar-width: 0px;
   scrollbar-color: #0b1930 grey;
-  color: #0b1930;
+  color: #5f6368;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -318,6 +318,6 @@ h5 {
 }
 
 
-.messagebox{
-  border-radius: 74% 26% 28% 72% / 69% 49% 51% 31% ;
+.custom-border2{
+  border-radius: 45% 55% 55% 45% / 47% 39% 61% 53% ;
 }

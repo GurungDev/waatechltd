@@ -12,9 +12,9 @@ const MessageBanner = ({
   
 }) => {
   return (
-    <div className="">
+    <div className="   ">
       <div className=" text-center rouned-xl py-10 app-layout">
-        <h1 className="c1 ">{title}</h1>
+        <h1 className="c1 		 duration-300">{title}</h1>
         <button className="my-8">
           <Link
             href={link}

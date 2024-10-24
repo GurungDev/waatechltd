@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import React, { ChangeEvent, FormEvent, useState } from "react";
+import { FaPhone } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 interface FormData {
   firstName: string;
@@ -19,7 +21,9 @@ const Contact_us: React.FC = () => {
     comments: "",
   });
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -70,6 +74,40 @@ const Contact_us: React.FC = () => {
                 support team and we’ll be happy to assist you.
               </p>
             </div>
+
+            <div className=" flex gap-10 py-10  ">
+              <div>
+                {" "}
+                <h3 className=" font-[400] "> Contact</h3>
+                <div className=" group mt-3 small">
+                  <div className="flex gap-2 items-center duration-300 group-hover:translate-x-[10px]">
+                    {" "}
+                    <MdOutlineMail />
+                    <p className="py-2 text-text  ">Email </p>
+                  </div>
+                  <p>contact@waa-tech-ltd.com</p>
+                </div>
+                <div className=" group mt-3 small">
+                  <div className="flex gap-2 items-center duration-300 group-hover:translate-x-[10px]">
+                    {" "}
+                    <FaPhone />
+                    <p className="py-2 text-text  ">Phone Number </p>
+                  </div>
+
+                  <p>+49 1523 1401084</p>
+                </div>
+              </div>
+              <div>
+                {" "}
+                <h3 className=" font-[400] "> Headquater</h3>
+                <div className="  mt-3 small flex gap-5">
+                  <div>
+                    <p className="">Waa Tech Ltd</p>
+                    <p className="mt-2">Nile Street 64, London, UK</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
         <motion.div
@@ -79,9 +117,15 @@ const Contact_us: React.FC = () => {
           viewport={{ once: false }}
           className="flex-1 flex flex-col space-y-3 min-[1100px]:p-20"
         >
-          <form onSubmit={handleSubmit} className="min-[1100px]:w-[500px] flex flex-col space-y-4">
+          <form
+            onSubmit={handleSubmit}
+            className="min-[1100px]:w-[500px] flex flex-col space-y-4"
+          >
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="firstName"
+                className="block text-sm font-medium text-gray-700"
+              >
                 First Name
               </label>
               <input
@@ -93,7 +137,10 @@ const Contact_us: React.FC = () => {
               />
             </div>
             <div>
-              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="lastName"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Last Name
               </label>
               <input
@@ -105,7 +152,10 @@ const Contact_us: React.FC = () => {
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="subject"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Subject
               </label>
               <input
@@ -117,7 +167,10 @@ const Contact_us: React.FC = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Email
               </label>
               <input
@@ -129,7 +182,10 @@ const Contact_us: React.FC = () => {
               />
             </div>
             <div>
-              <label htmlFor="comments" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="comments"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Comments
               </label>
               <textarea
