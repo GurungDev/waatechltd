@@ -23,7 +23,7 @@ const AboutUsSection = () => {
             },
           }}
           viewport={{ once: true }}
-          className=" "
+          className="  "
         >
           <h2 className=" py-8 font-[700]">Why should you choose us?</h2>
           <p className="tagline">

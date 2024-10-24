@@ -1,7 +1,4 @@
 import Contact_us from "@/components/Contact_us";
-import React from "react";
-import { FaPhone } from "react-icons/fa";
-import { MdOutlineMail } from "react-icons/md";
 
 const ContactUsPage = () => {
   return (

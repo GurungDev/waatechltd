@@ -10,7 +10,7 @@ const LandingSection = () => {
     <div className="relative">
       {" "}
       <div className="  flex items-center justify-center min-[1100px]:justify-around flex-col bg-neutral-100 bg-opacity-100 custom-border md:flex-row h-[100vh] ">
-        <div className="w-[95%]  min-[1100px]:w-[60%]">
+        <div className="w-[95%] order-2 min-[1100px]:order-1  min-[1100px]:w-[60%]">
           <Lottie animationData={title} className="" />
           <button className="button duration-300 group hover:bg-transparent relative my-7">
             <Link
@@ -155,7 +155,7 @@ const LandingSection = () => {
           </button>
         </div>
 
-        <div>
+        <div className="order-1 min-[1100px]:order-2">
           <div className="relative w-[300px] h-[250px]  ">
             <Image
               src={"/logo.png"}

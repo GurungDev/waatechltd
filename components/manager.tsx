@@ -6,7 +6,7 @@ const ManagerComponent = () => {
   return (
     <div className="py-40 bg-neutral-100">
       {" "}
-      <div className="app-layout  flex flex-col min-[1100px]:flex-row gap-10 justify-between">
+      <div className="app-layout overflow-hidden flex flex-col min-[1100px]:flex-row gap-10 justify-between">
         <div className="m-auto">
           <Image
             src="/boksiii.jpeg"
@@ -29,7 +29,7 @@ const ManagerComponent = () => {
             },
           }}
           viewport={{ once: true }}
-          className="w-[70%] m-auto"
+          className="w-[70%] m-auto "
         >
           <h3>Marketing Manager</h3>
           <p className="tagline">Hannah Maria Zeller</p>
