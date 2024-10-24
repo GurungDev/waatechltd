@@ -33,7 +33,7 @@ const AboutUsLandingPage = () => {
                 href={"/contactus"}
                 className="px-14 tagline py-3 bg-black text-white my-8 rounded-xl font-[600] hover:px-20 duration-300"
               >
-                Let's work Together
+                Let&apos;s work Together
               </Link>
             </button>{" "}
           </motion.div>

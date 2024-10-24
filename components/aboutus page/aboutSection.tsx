@@ -102,7 +102,7 @@ const AboutSection = () => {
           </div>
           <div className="mt-6">
             <p className="">
-              Let's elevate your online presence together. Contact us today to
+              Let&apos;s elevate your online presence together. Contact us today to
               learn more about our website creation services and to schedule a
               no-obligation consultation.
             </p>
